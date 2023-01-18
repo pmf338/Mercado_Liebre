@@ -1,19 +1,20 @@
 const express = require('express');
 const app = express();
-const PORT = 3002;
-const path = require("path");
+app.use(express.static('public'));
 
-app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-
-    res.sendFile(path.resolve(__dirname, "./views/home.html"));
-
+app.listen(3004, ()=>{
+    console.log('Servidor funcionando');
 });
 
-app.listen(PORT, () => {
+app.get('/', (req,res)=>{
+    res.sendFile(__dirname + '/views/home.html');
+});
 
-    numeroPuerto = PORT;
-    console.log('server listening on ${PORT} cuyo numero es ' + numeroPuerto);
+app.get('/login', (req,res)=>{
+    res.sendFile(__dirname + '/views/login.html');
+});
 
+app.get('/register', (req,res)=>{
+    res.sendFile(__dirname + '/views/register.html');
 });

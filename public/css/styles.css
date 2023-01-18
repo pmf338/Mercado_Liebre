@@ -7,63 +7,426 @@ Gris claro: #ebebeb;
 Verde: #39b54a;
 */
 
-* {
-
+*{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-a {
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
 
+a {
     text-decoration: none;
 }
 
-header {
-
-    background-color: #EAC926;
-    width: 100%;
+input {
+    font-size: 0.8rem;
+    color: darkgray;
 }
 
-img {
+/*----------------------------------------------------------------------------HEADER-------------------------------------*/
+header {
+    background-color: #EAC926;
+    width: 100%;
+    padding-bottom: 10px;
+}
 
-    width: 20%;
+.main-header {
+    border: #1259c3;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.main-header-top-bar {
+    padding: 10px;
+    
 }
 
 .header-logo {
-
-    width: 45%;
-    margin-right: 80px;
+    width: 250px;
 }
 
-.header-title {
+.header-input-botton {
+    display: flex;
+    margin-top: 10px;
+}
 
+.header-input {
+    margin-left: 20px;
+}
+
+
+.main-header-bottom-bar {
+    padding: 10px;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.hamburguer-button {
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    max-width: 30px;
+    max-height: 30px;
+    padding: 5px 0;
+    margin-top: 20px;
+    margin: auto;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+@media (min-width: 1200px){
+
+    .main-header-top-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .header-text {
+        max-width: none;
+        text-align: right;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .main-navbar {
+        margin-top: 20px;
+    }
+
+    .main-header-top-bar, .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .main-navbar li {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .main-header-top-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-text {
+        max-width: 300px;
+        text-align: right;
+    }
+    
+    .main-navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul {
+        display: flex;
+    }
+
+    .hamburguer-button {
+        display: none;
+    }
+}
+
+
+@media (max-width:768px){
+
+    .header-text {
+        text-align: center;
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .main-navbar {
+        display: none;
+    }
+}
+
+section.banner img {
+    width: 100%;
+  }
+
+@media (min-width: 768px){
+
+    .banner {
+        margin-top: 139px;
+    }
+}
+
+@media (max-width:768px){
+
+    .banner {
+        margin-top: 212px;
+    }
+}
+
+
+/*--------------------------------------------------------------------MAIN--------------------------------------------------*/
+
+.main-section {
+    width: 90vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+
+.main-section-title {
+    margin: 20px;
+}
+
+.main-article {
+    margin: 10px;
+}
+
+.article-image {
+    width: 100%;
+    padding: 0;
+}
+
+.article-information-div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+.article-logo-shipping {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    margin: 10px auto;
+    border: solid 1px rgb(2, 173, 2);
+    border-radius: 50%;
+    position: absolute;
+    right: 21px;
+    top: -29px;
+}
+
+.article-discount {
+    color: rgb(2, 173, 2);
+}
+
+.article-discount, .article-description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.article-description {
+    display: none;
+    margin-top: 20px;
+    color: #666;
+}
+
+.article-price{
+
+        margin-right: 10px;
+}
+
+
+
+@media (min-width: 361px){
+
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.products article {
+        width: 22%;
+    }
+}
+
+
+
+/*----------------------------------------------------FOOTER-------------------------------------------------*/
+
+.footer-div {
+    margin: 20px;
+}
+
+.footer-div-icon {
+    width: 2em;
+    height: 2em;
+    margin: 5px auto;
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.footer-text {
     text-align: center;
     font-size: 12px;
     font-weight: lighter;
 }
 
-li a {
+@media (min-width: 768px){
 
-    color: black;
-    font-size: 11px;
+    footer .footer-main-div {
+        display: flex;
+    }
+
+    footer .footer-div {
+        display: flex;
+        flex-direction: column;
+      }
 }
 
-.burger-menu {
 
-    border: 1px solid red;
-    width: 40px;
-    height: 40px;
-    margin: 10px auto;
+
+/*----------------------------------------------------LOGIN---------------------------------------------------*/
+
+.login-form, .register-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 242px;
+    margin-bottom: 150px;
+}
+
+.login-form input {
+    font-size: 0.8rem;
+    color: darkgray;
+    
+}
+
+.login-form {
+    background-color: #ebebeb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #999;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+  }
+  
+ .login-form input[type="text"],
+ .login-form input[type="password"] {
+    width: 600px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .login-form button[type="submit"] {
+    width: 100%;
     background-color: #1259c3;
-    border-radius: 8px;
-}
-
-.fa-bars {
-
-    font-size: 25px;
     color: white;
-    text-align: center;
-    line-height: 40px;
-    margin-left: 9px;
-}
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  @media (max-width: 600px) {
+    
+    .main-login {
+        display: grid;
+        place-items: center;
+      }
+     
+    .login-form {
+
+        width: 50%; 
+          
+    }  
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      margin: 8px 0px;
+
+    }
+  
+    .login-form button[type="submit"] {
+      width: 100%;
+      margin: 8px 0px;
+    }
+  }
+ 
+
+/*---------------------------------------------------------------REGISTRO---------------------------------------------------*/
+
+.register-form {
+    background-color: #ebebeb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #999;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="password"],
+  .register-form input[type="email"],
+  .register-form input[type="date"],
+  .register-form input[type="file"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .register-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .register-form .radio-inputs label {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .register-form input[type="checkbox"] {
+    margin: 0 10px;
+  }
+  
+  .register-form button[type="submit"],
+  .register-form button[type="reset"] {
+    width: 100%;
+    background-color: #1259c3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .register-form button[type="submit"]:hover,
+  .register-form button[type="reset"]:hover {
+    background-color: #45a049;
+  }
+

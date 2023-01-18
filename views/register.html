@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registrese MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/eb1e7833c7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="main-header-top-bar">
+              
+              <a href="/"><img class="header-logo" src="./images/logo-mercado-liebre.svg" alt=""></a>
+        
+              <div class="header-input-botton">
+                <input type="input" class="header-input" value="Buscar productos, marcas">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              
+              <h3 class="header-text"> 
+                <i class="fa-solid fa-hand-holding-dollar"> </i> Comprá en cuotas y sin tarjeta de crédito 
+              </h3>
+            </div>
+        
+            <div class="main-header-bottom-bar">
+              <nav class="main-navbar">
+                <ul class="left-navbar">
+                  <li><a href="#">Ofertas</a> </li>
+                  <li><a href="#">Tiendas Oficiales</a></li>
+                  <li><a href="#">Vender</a></li>
+                  <li><a href="#">Ayuda</a></li>
+                </ul>
+          
+                <ul class="right-navbar">
+                  <li>
+                    <a href="/register">Crear tu cuenta</a> 
+                    <i class="fa-solid fa-address-card"></i>
+                  </li>
+                  <li>
+                    <a href="/login">Ingresa</a>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                  </li>
+                  <li>
+                    <a href="#">Mis cuentas</a>
+                    <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            
+            <a href="#" class="hamburguer-button"> <i class="fa-solid fa-bars"></i> </a>
+          </header>
+          <main>
+            <div class="register-form">
+                <form action="/" method="">
+                    <input type="text" name="name" placeholder="Nombre y apellido">
+                    <br>
+                    <input type="text" name="user" placeholder="Nombre de usuario">
+                    <br>
+                    <input type="email" name="email" placeholder="E-Mail">
+                    <br>
+                    <label for="date"><b>Fecha de nacimiento</b></label>
+                    <br>
+                    <input type="date" name="date" id="date">
+                    <br>
+                    <input type="text" name="address" id="address" placeholder="Domicilio">
+                    <br>
+                    <label for="user-profile"><b>Perfil del usuario</b></label>
+                    <br>
+                    <div class="radio-inputs">
+                        <label><input type="radio" value="comprador" name="user-profile" id="buy"> Comprador</label>
+                        <label><input type="radio" value="vendedor" name="user-profile" id="sell"> Vendedor</label>
+                    </div>
+                    <br>
+                    <label for=""><b>Intereses</b></label>
+                    <br>
+                    <label><input type="checkbox" name="electro" value="1"> Electro</label>
+                    <br>
+                    <label><input type="checkbox" name="moda" value="2"> Moda</label>
+                    <br>
+                    <label><input type="checkbox" name="hogar" value="3"> Hogar</label>
+                    <br>
+                    <label><input type="checkbox" name="juguetería" value="4"> Juguetería</label>
+                    <br>
+                    <label><input type="checkbox" name="vida-sana" value="5"> Vida Sana</label>
+                    <br>
+                    <input type="file" name="photo" id="photo">
+                    <br>
+                    <input type="password" name="password" placeholder="Escriba su contraseña">
+                    <br>
+                    <input type="password" name="password-confirm" placeholder="Confirme su contraseña">
+                    <br>
+                    <button type="submit">
+                    Enviar
+                    </button>
+                    <br>
+                    <button type="reset">
+                    Borrar
+                    </button>
+    
+                </form>
+            </div>
+          </main>
+          <footer>
+            <div class="footer-main-div">
+              <div class="footer-div">
+                <div class="footer-div-icon"><i class="fa-solid fa-credit-card footer-icon"></i></div>
+                <h3 class="footer-title">Paga con tarjeta o efectivo</h3>
+                <p class="footer-text">
+                  Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                  puntos de pago. ¡Y siempre es seguro!
+                </p>
+              </div>
+          
+              <div class="footer-div">
+                <div class="footer-div-icon"><i class="fa-solid fa-gift footer-icon footer-icon"></i></div>
+                <h3 class="footer-title">Envio gratis desde $ 2.500</h3>
+                <p class="footer-text">
+                  Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                  productos. Es un beneficio de Mercado Puntos.
+                </p>
+              </div>
+          
+              <div class="footer-div">
+                <div class="footer-div-icon"><i class="fa-solid fa-user-shield footer-icon footer-icon"></i></div>
+                <h3 class="footer-title">Seguridad, de principio a fin</h3>
+                <p class="footer-text">
+                  ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                  porque estás siempre protegid@.
+                </p>
+              </div>
+            </div>
+        
+            <h4 class="footer-text">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+          </footer>
+    </body>
+</html>
