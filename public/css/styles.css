@@ -284,6 +284,11 @@ section.banner img {
     font-weight: lighter;
 }
 
+.footer-div-icon i:hover {
+
+    color: #03264C;
+}
+
 @media (min-width: 768px){
 
     footer .footer-main-div {
@@ -346,7 +351,7 @@ section.banner img {
   }
   
   .login-form button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0022AA;
   }
 
   @media (max-width: 600px) {
