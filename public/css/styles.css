@@ -222,6 +222,19 @@ section.banner img {
     top: -29px;
 }
 
+.article-logo-shipping i{
+
+    color: green;
+    margin-top: 5px;
+}
+
+.article-logo-shipping:hover i{
+
+
+    transform: rotate(90deg);
+    transition: 0.4s;
+}
+
 .article-discount {
     color: rgb(2, 173, 2);
 }
